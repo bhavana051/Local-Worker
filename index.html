@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+   <style>
+    .box{
+    background-image: url(imgs/bg7.jpg);
+    width: auto;
+    height: auto;
+    background-size: 1400px auto ;
+    
+    }
+    .nav-item{
+        margin-right: 20px;
+        color: brown;
+       
+        
+      }
+      .navbar-brand{
+      margin-right: 50px;
+      margin-left: 0px;
+
+    }
+    .homepage{
+      width: auto;
+      height: 450px;
+      color:wheat;
+
+    }
+    .inst{
+      width: auto;
+      height: 50px;
+      background: transparent;
+      color: wheat;
+      text-align: center;
+      font-size: 2rem;
+      font-family: cursive;
+      border: 1px solid black;
+      justify-content: center;
+      margin-bottom: 20px;
+      line-height: 50px;
+
+    }
+    h2{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      size: 10px;
+      margin-left: 40px;
+      font-family: cursive;
+      font-size: 2rem;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    a:hover{
+      text-decoration: solid;
+      border: 1px solid black;
+    border-radius: 30px;
+    }
+    .nav-link {
+      color: white;
+      font-size: 1rem;
+      font-family:cursive;
+     }
+    
+    
+    hr{
+      justify-content: center;
+      color: black;
+      margin-left: 530px;
+    }
+    h6{
+      margin:30px;
+      margin-left: 300px;
+      margin-right: 300px;
+      color:azure;
+      font-family: cursive;
+    }
+    #fixedbtn{
+      top:450px;
+      left:600px;
+      position: fixed;
+    }
+    .third{
+      border:3px dotted black;
+      border-radius: 50px;
+      opacity: 0.7;
+    }
+    .card1{
+      margin-bottom: 0px;
+      margin-left: 140px;
+      border-radius: 30px;
+      border: 1px dashed black;
+      background: transparent;
+      color: white;
+      font-family: cursive;
+      width: 300px;
+      height: 400px;
+    }
+    .card2{
+      margin-bottom: 0px;
+      margin-left: 70px;
+      border-radius: 30px;
+      border: 1px dashed black;
+      background: transparent;
+      color: white;
+      font-family: cursive;
+      width: 300px;
+      height: 400px;
+    }
+    .card3{
+      margin-bottom: 0px;
+      margin-right: 150px;
+      margin-left: 0px;
+      border-radius: 30px;
+      border: 1px dashed black;
+      background: transparent;
+      color: white;
+      font-family: cursive;
+      width: 300px;
+      height: 400px;
+    }
+    
+    
+    .card-img-top{
+      border-radius: 30px 30px 0px 0px;
+    }
+    .bottonimg{
+      border-radius: 40px;
+      
+    }
+    h4{
+      color:rgb(207, 132, 46);
+    }
+    .regbotton{
+      width: 100px;
+      height: 50px;
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+      font-size: 1.2rem;
+      font-family: cursive;
+    }
+    
+    .modal{
+      background: transparent;
+    }
+    .space{
+      width: auto;
+      height: 100px;
+      background: transparent;
+    }
+    
+    .footer{
+      background-color: black;
+      width: auto;
+      height: 50px;
+      text-align: center;
+      font-size: 2rem;
+      font-family: serif;
+      color: white;
+      line-height: 50px;
+    }
+    
+
+
+    /* about page css*/
+    
+   </style>
+</head>
+<body>
+    <div class="box">
+        <div class="row">
+          <!--navigation bar-->
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="imgs/logo4.png" width="70px" height="50px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  "  href="workers.html">Workers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      
+                    </ul>
+                    
+                    <li class="nav-item dropdown ms-auto">
+                      
+                        <button type="button" class="regbotton dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >Login</button>
+                       <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  " data-bs-toggle="modal" data-bs-target="#logworker " href="#logworker">As a Workers</a></li>
+                        <li><a class="dropdown-item  " data-bs-toggle="modal" data-bs-target="#loghire" href="#loghire">As a Hire</a></li>
+                        
+                      </ul>
+                      <button type="button" class=" regbotton" data-bs-toggle="modal" data-bs-target="#register" >Register</button>
+                    </li>
+                    
+            
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="row">
+          <div class="col-md-12 ">
+            <!--home page-->
+            <div class="homepage">
+              <br><br><br>
+             <h2>A smart way to find & hire local Workers near you.</h2>
+             <br>
+             <h4 align="center">Easy, Quick & Affordable</h4>
+             <hr width="280px" color="black">
+             <h4 align="center">Legally Verified Workers</h4>
+             <br>
+             <h6 align="center">Find multiple legally verified Workers near you, pay a nominal fee, connect with them directly & hire anyone you like. And if it doesn't work out, ask for a 100% refund within 15 days of your order.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="inst">
+          <div class="col-md-12">
+            <center><h3> Instructions To the Hire</h3></center>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+           
+            <div class="card1">
+                <img height="150px" src="imgs/login.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title ">Login To page</h4>
+                    <p class="card-text">First User need to Login to page:<br>
+                      1.Click on <u>Login Button</u><br>
+                      2.Enter Your <u>Details</u><br>
+                      3.Verify Your <u>Number or Mail</u><br>
+                      4.<u>Find</u> Requird worker </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card2">
+                <img height="150px" src="imgs/search.jpg" class="card-img-top"  >
+                <div class="card-body">
+                    <h4 class="card-title ">Search for Requird Worker-domine</h4>
+                    <p class="card-text">After login to the page <u>worker page</u> will appear<br>
+                      1.goto the <u>Search bar</u> and serch for worker (or)<br>
+                      2. Find the worker-domine From below list</p>
+                    
+                </div>
+            </div>
+        </div>
+            <div class="col-md-4">
+                <div class="card3">
+                    <img height="150px" src="imgs/hire.png" class="card-img-top" >
+                    <div class="card-body">
+                        <h4 class="card-title ">Hire Them </h4>
+                        <p class="card-text">1.Select the <u>Best Worker</u> from given list <br>
+                          2.Open their <u>profile and Contact them</u><br>
+                          3.Give the <u>Feedback</u> to the Worker
+
+                        </p>
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="space">
+      <div class="col-md-12">
+
+      </div>
+    </div>
+        
+        <div class="row">
+          <div cass="col-md-12">
+           <div class="third">
+            <img src="imgs/botton.jpg" width="1340px" height="200px" class="bottonimg">
+           </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer">
+              <h5> Copy Right @2023</h5>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+    <!--model pop up for login for hire-->
+    <div class="modal fade text-center text-primary" id="loghire" tabindex="-1" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" >Login Form for Hire</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mt-3">
+                  <input type="text" placeholder=" Enter Your Name" class="form-control">
+              </div>
+              <div class="mt-3">
+                  <input type="text" placeholder=" Contact No" class="form-control">
+              </div>
+              <div class="mt-3">
+                <input type="email" placeholder=" email" class="form-control">
+            </div>
+              <div class="mt-3" >
+                  <textarea class="form-control">Address</textarea>
+              </div>
+              
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--model pop up login for worker-->
+
+    <div class="modal fade text-center text-primary" id="logworker" tabindex="-1" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" >Login Form for Worker</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mt-3">
+                  <input type="text" placeholder=" Email or Phone" class="form-control">
+              </div>
+              <div class="mt-3">
+                  <input type="password" placeholder=" Password" class="form-control">
+                  <a href="#" align="right">Forget Password?</a><br>
+                  <input type="checkbox" align="left">Remember me<br>
+              <p align="center" color="black">Don't you have an account? <a href="#register" data-bs-toggle="modal" data-bs-target="#register" data-bs-dismiss="modal" >Register</a></p>
+              </div>
+              
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            <button type="button" class="btn btn-primary">Login</button><br><br>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--model pop up register form  -->
+    <div class="modal fade text-center text-primary" id="register" tabindex="-1" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" >Register Hear</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mt-3">
+                  <input type="text" placeholder=" Enter FirstName" class="form-control">
+              </div>
+              <div class="mt-3">
+                <input type="text" placeholder=" Enter LastName" class="form-control">
+            </div>
+              <div class="mt-3">
+                  <input type="text" placeholder=" Contact No" class="form-control">
+              </div>
+              <div class="mt-3">
+                <input type="email" placeholder=" email" class="form-control">
+            </div>
+            <div class="mt-3">
+              <input type="password" placeholder=" Create a Password" class="form-control">
+          </div>
+          <div class="mt-3">
+            <input type="password" placeholder=" Confim Your Password" class="form-control">
+        </div>
+              <div class="mt-3" >
+                  <textarea class="form-control" placeholder="Address"></textarea>
+              </div>
+              
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            <a href="#register2"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#register2" data-bs-dismiss="modal" >Next</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--model pop up for registration extention-->
+    <div class="modal fade text-center text-primary" id="register2" tabindex="-1" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" >Register Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mt-3">
+                  <input type="text" placeholder=" Enter your Work" class="form-control">
+              </div>
+              <div class="mt-3">
+                <input type="text" placeholder=" Enter Your Work Experience" class="form-control" >
+            </div>
+              <div class="mt-3">
+                  <input type="text" placeholder=" Enter Your Age" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <button id="fixedbtn" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loghire" width="70px">Find & Hire Now</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
+
